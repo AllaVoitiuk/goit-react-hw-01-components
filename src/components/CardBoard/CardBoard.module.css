@@ -1,0 +1,12 @@
+.list {
+    display: flex;
+    width: 420px;
+    margin-top: 0;
+    padding: 0;
+    justify-content: center;
+    border: 1px solid gray;
+    background-color: gainsboro;
+    margin-left: auto;
+    margin-right: auto;
+}
+

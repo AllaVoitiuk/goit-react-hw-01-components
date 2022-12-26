@@ -1,0 +1,28 @@
+table, th, td {
+    /* border: 1px solid #eee; */
+    padding: 20px;
+}
+
+thead {
+    font-size: 16px;
+  
+    text-align: center;
+    color: white;
+}
+
+.transaction-history {
+    width: 60%;
+} 
+
+th {
+    height: 30px;
+}
+
+/* tr:nth-child(even) {background-color: #ECF1F3;} */
+
+td {
+  width: 20%;  
+  font-size: 14px;
+  text-align: center;
+  color: #ACB2B7;
+}
