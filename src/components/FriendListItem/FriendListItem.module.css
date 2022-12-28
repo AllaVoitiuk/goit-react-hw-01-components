@@ -16,6 +16,14 @@ border: 1px solid #eeeeee;
     
 }
 
+.false {
+    background-color: red;
+}
+
+.true {
+    background-color: green;
+}
+
 .avatar {
     display: block;
     width: 120px;

@@ -1,25 +1,37 @@
 import PropTypes from 'prop-types';
 import css from "./Statistics.module.css";
-import { CardBoard } from "components/CardBoard/CardBoard";
-import { TitleStatistic } from "../TitleStatistic/TitleStatistic";
-import data from "../data/data.json"
+
 
 export const Statistics = ({title, stats}) => {
-  stats={data} 
+  
 return (
 <section className={css.statistics}>
-  <TitleStatistic text = {title}/>
-  <CardBoard events = {data}/>
+  <h2 className={css.title}>{title}</h2>
+
+    <ul className={css.list}>
+      {            
+      stats.map(({id, label, percentage})=> {
+      return(
+        <li className = {css.item} key={id}>
+          <span className = {css.label}>{label}</span>
+          <span className = {css.percentage}>{percentage}%</span>
+        </li>
+      )
+      })
+      }
+    </ul> 
+ 
 </section>
   );
 };
 
 Statistics.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   stats: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string,
       label: PropTypes.string,
       percentage:  PropTypes.number,
-    }),).isRequired,
+    }),
+  ).isRequired,
 };

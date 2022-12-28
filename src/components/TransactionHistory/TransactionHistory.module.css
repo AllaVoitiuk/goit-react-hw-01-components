@@ -5,7 +5,6 @@ table, th, td {
 
 thead {
     font-size: 16px;
-  
     text-align: center;
     color: white;
 }
@@ -25,4 +24,8 @@ td {
   font-size: 14px;
   text-align: center;
   color: #ACB2B7;
+}
+
+tr:nth-child(even) {
+    background-color: #ECF1F3;
 }
